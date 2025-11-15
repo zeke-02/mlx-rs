@@ -1,0 +1,141 @@
+[package]
+name = "fount"
+version = "0.0.1"
+description = "A Tauri App"
+authors = ["mario"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "fount_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2.9.2", features = ["macos-private-api"] }
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+tauri-plugin-fs = { version = "2.0.0-rc", features = ["watch"] }
+tauri-plugin-persisted-scope = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-os = "2"
+dotenv = "0.15"
+tauri-plugin-http = { version = "2", features = ["json"] }
+lancedb = "0.22.1"
+thiserror = "1.0"
+tempfile = "3"
+markdown-it = "0.6.1"
+uuid = { version = "1.0", features = ["v4"] }
+tokio = { version = "1.0", features = ["time"] }
+futures = "0.3"
+arrow = "55.2"
+arrow-array = "55.2"
+arrow-schema = "55.2"
+notify = { version = "6.1", default-features = false, features = ["macos_fsevent"] }
+walkdir = "2.3"
+sqlx = { version = "0.8", features = ["runtime-tokio", "sqlite", "chrono", "uuid"] }
+async-trait = "0.1"
+base64 = "0.22"
+anyhow = "1"
+url = "2.5.7"
+scraper = "0.24.0"
+htmd = "0.3.0"
+window-vibrancy = "0.6.0"
+v = "0.1.0"
+faer = "0.22.2"
+semanticsimilarity_rs = "0.1.1"
+unicode-segmentation = "1.12.0"
+rust-stemmers = "1.2.0"
+tauri-plugin-process = "2"
+ndarray = "0.16.1"
+tokenizers = { version = "0.22" }
+# ferrules crates
+lazy_static = "1.5.0"
+itertools = "0.14.0"
+colored = "3.0.0"
+dirs = "6.0.0"
+tracing = "0.1.41"
+# pdf reader
+imageproc = "0.25.0"
+ab_glyph = "0.2.29"
+pdfium-render = { version = "0.8.35", features = [
+    "bindings",
+    "sync",
+] }
+
+
+
+# Inference
+image = "0.25.5"
+plsfix = "0.1.7"
+
+serde_millis = "0.1.1"
+kmeans = "2.0.1"
+# Rendering
+build_html = "2.6.0"
+regex = "1.11.1"
+html2md = "0.2.15"
+keyring = { version = "3.6.3", features = ["apple-native", "windows-native"] }
+# OAuth2 dependencies
+warp = "0.3"
+sha2 = "0.10"
+rand = "0.8"
+urlencoding = "2.1"
+reqwest = { version = "0.11", features = ["stream", "json"] }
+tauri-plugin-shell = "2"
+tauri-plugin-system-info = "2.0.9"
+parking_lot = "0.12"
+
+
+[target.'cfg(target_os = "macos")'.dependencies]
+ort = { version = "=2.0.0-rc.10", features = ["coreml", "fetch-models", "std", "half"] }
+objc2 = { version = "^0.5.2" }
+objc2-foundation = { version = "^0.2.2" }
+objc2-vision = { version = "^0.2.2", features = [
+    "VNRequest",
+    "VNRequestHandler",
+    "VNRecognizeTextRequest",
+    # Getting results
+    "VNObservation",
+    "VNTypes",
+] }
+mlx-sys = "0.2.0"
+mlx-rs = "0.25.2"
+mlx-lm = "0.0.1"
+mlx-lm-utils = "0.0.1"
+hf-hub = "0.4.3"
+
+
+
+[target.'cfg(target_os = "linux")'.dependencies]
+ort = { version = "=2.0.0-rc.10", features = [
+    "fetch-models",
+    "half",
+    "cuda",
+    "tensorrt",
+    "load-dynamic",
+] }
+
+[target.'cfg(target_os = "windows")'.dependencies]
+ort = { version = "=2.0.0-rc.10", features = [
+    "directml",      # Essential - works across all GPU vendors on Windows
+    "load-dynamic",  # Load ONNX Runtime dynamically to avoid CRT conflicts
+    "std"
+] }
+
+[target.'cfg(not(any(target_os = "android", target_os = "ios")))'.dependencies]
+tauri-plugin-updater = "2"
+tauri-plugin-window-state = "2"
+
+[dev-dependencies]
+rand = "0.8.5"
+rayon = "1.10.0"
+criterion = { version = "0.5", features = ["html_reports"] }

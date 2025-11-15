@@ -396,6 +396,7 @@ where
         } = input;
 
         let mut h = self.embed_tokens.forward(inputs)?;
+        println!("[DEBUG] Embed tokens shape: {:?}", h.shape());
 
         let mask = match mask {
             Some(mask) => Some(mask.clone()),
@@ -412,16 +413,22 @@ where
             *cache = (0..self.layers.len()).map(|_| None).collect();
         }
 
+        println!("[DEBUG] Mask shape: {:?}", mask.as_ref().map(|m| m.shape()));
+
         for (layer, c) in self.layers.iter_mut().zip(cache.iter_mut()) {
             let layer_input = AttentionInput {
                 x: &h,
                 mask: mask.as_ref(),
                 cache: c.as_mut(),
             };
+            println!("[DEBUG] Layer input shape: {:?}", layer_input.x.shape());
             h = layer.forward(layer_input)?;
         }
+        println!("[DEBUG] Hidden states shape: {:?}", h.shape());
 
-        self.norm.forward(&h)
+        let output = self.norm.forward(&h)?;
+        println!("[DEBUG] Output shape: {:?}", output.shape());
+        Ok(output)
     }
 
     fn training_mode(&mut self, mode: bool) {
@@ -469,6 +476,68 @@ impl Model {
     pub fn model_type(&self) -> &str {
         &self.args.model_type
     }
+}
+
+/// Ensure modules are quantized to match DWQ (group_size=64, bits=4) checkpoints.
+fn ensure_dwq_quantized(model: &mut Model) -> Result<(), Exception> {
+    const GROUP_SIZE: i32 = 64;
+    const BITS: i32 = 4;
+
+    // Quantize embedding
+    model.model.embed_tokens = model
+        .model
+        .embed_tokens
+        .clone()
+        .quantize_with(|m| nn::quantize(m, GROUP_SIZE, BITS))?;
+
+    // Quantize all linears in each Transformer block
+    for layer in &mut model.model.layers {
+        layer.self_attn.q_proj = layer
+            .self_attn
+            .q_proj
+            .clone()
+            .quantize_with(|m| nn::quantize(m, GROUP_SIZE, BITS))?;
+        layer.self_attn.k_proj = layer
+            .self_attn
+            .k_proj
+            .clone()
+            .quantize_with(|m| nn::quantize(m, GROUP_SIZE, BITS))?;
+        layer.self_attn.v_proj = layer
+            .self_attn
+            .v_proj
+            .clone()
+            .quantize_with(|m| nn::quantize(m, GROUP_SIZE, BITS))?;
+        layer.self_attn.o_proj = layer
+            .self_attn
+            .o_proj
+            .clone()
+            .quantize_with(|m| nn::quantize(m, GROUP_SIZE, BITS))?;
+
+        layer.mlp.gate_proj = layer
+            .mlp
+            .gate_proj
+            .clone()
+            .quantize_with(|m| nn::quantize(m, GROUP_SIZE, BITS))?;
+        layer.mlp.up_proj = layer
+            .mlp
+            .up_proj
+            .clone()
+            .quantize_with(|m| nn::quantize(m, GROUP_SIZE, BITS))?;
+        layer.mlp.down_proj = layer
+            .mlp
+            .down_proj
+            .clone()
+            .quantize_with(|m| nn::quantize(m, GROUP_SIZE, BITS))?;
+    }
+
+    // Quantize lm_head if present
+    if let Some(lm_head) = &mut model.lm_head {
+        *lm_head = lm_head
+            .clone()
+            .quantize_with(|m| nn::quantize(m, GROUP_SIZE, BITS))?;
+    }
+
+    Ok(())
 }
 
 impl<C> Module<ModelInput<'_, C>> for Model
@@ -522,6 +591,9 @@ pub fn load_qwen3_model(model_dir: impl AsRef<Path>) -> Result<Model, Error> {
     let model_dir = model_dir.as_ref();
     let model_args = get_qwen3_model_args(model_dir)?;
     let mut model = Model::new(model_args)?;
+
+    // Enable quantized modules so DWQ (4-bit) weights map correctly
+    ensure_dwq_quantized(&mut model)?;
 
     let weights_index = model_dir.join("model.safetensors.index.json");
     let json = std::fs::read_to_string(weights_index)?;

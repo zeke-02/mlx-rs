@@ -1,0 +1,678 @@
+
+Caused by:
+  process didn't exit successfully: `/Users/runner/work/fount/fount/src-tauri/target/release/build/mlx-sys-0d08c61efc15bedd/build-script-build` (exit status: 101)
+  --- stdout
+  CMAKE_TOOLCHAIN_FILE_aarch64-apple-darwin = None
+  CMAKE_TOOLCHAIN_FILE_aarch64_apple_darwin = None
+  HOST_CMAKE_TOOLCHAIN_FILE = None
+  CMAKE_TOOLCHAIN_FILE = None
+  CMAKE_GENERATOR_aarch64-apple-darwin = None
+  CMAKE_GENERATOR_aarch64_apple_darwin = None
+  HOST_CMAKE_GENERATOR = None
+  CMAKE_GENERATOR = None
+  CMAKE_PREFIX_PATH_aarch64-apple-darwin = None
+  CMAKE_PREFIX_PATH_aarch64_apple_darwin = None
+  HOST_CMAKE_PREFIX_PATH = None
+  CMAKE_PREFIX_PATH = None
+  CMAKE_aarch64-apple-darwin = None
+  CMAKE_aarch64_apple_darwin = None
+  HOST_CMAKE = None
+  CMAKE = None
+  running: cd "/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build" && CMAKE_PREFIX_PATH="" LC_ALL="C" "cmake" "-Wdev" "--debug-output" "/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c" "-DCMAKE_OSX_ARCHITECTURES=arm64" "-DCMAKE_INSTALL_PREFIX=." "-DCMAKE_BUILD_TYPE=Release" "-DMLX_BUILD_METAL=OFF" "-DMLX_BUILD_ACCELERATE=OFF" "-DMLX_BUILD_METAL=ON" "-DMLX_BUILD_ACCELERATE=ON" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=10.13" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=10.13" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=10.13" "-DCMAKE_ASM_COMPILER=/usr/bin/cc" "-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON"
+  Running with debug output on.
+  -- The CXX compiler identification is AppleClang 17.0.0.17000319
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake
+  -- The C compiler identification is AppleClang 17.0.0.17000319
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake
+  -- Detecting CXX compiler ABI info
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake
+  -- Detecting CXX compiler ABI info - done
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake
+  -- Check for working CXX compiler: /usr/bin/c++ - skipped
+     Called from: [2]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake
+  -- Detecting CXX compile features
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake
+  -- Detecting CXX compile features - done
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake
+  -- Detecting C compiler ABI info
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake
+  -- Detecting C compiler ABI info - done
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake
+  -- Check for working C compiler: /usr/bin/cc - skipped
+     Called from: [2]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake
+  -- Detecting C compile features
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake
+  -- Detecting C compile features - done
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake
+  -- Building MLX for arm64 processor on Darwin
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+  -- Building METAL sources
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+  -- Building with macOS SDK version 26.0
+
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+  -- Accelerate found /Applications/Xcode_26.0.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Accelerate.framework
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+  -- Downloading json
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+  -- Using the multi-header code from /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/json-src/include/
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/json-src/CMakeLists.txt
+  -- Downloading gguflib
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/io/CMakeLists.txt
+  -- Version: 10.2.1
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/fmt-src/CMakeLists.txt
+  -- Build type: Release
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/fmt-src/CMakeLists.txt
+  -- Performing Test HAS_NULLPTR_WARNING
+     Called from: [4]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/fmt-src/CMakeLists.txt
+                  [3]	/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake
+                  [2]	/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake
+  -- Performing Test HAS_NULLPTR_WARNING - Success
+     Called from: [4]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/fmt-src/CMakeLists.txt
+                  [3]	/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake
+                  [2]	/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake
+  -- Configuring done (23.9s)
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/json-build
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/json-src/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/backend/common
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/common/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/backend/cpu
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/cpu/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/distributed
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/distributed/mpi
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed/mpi/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/distributed/ring
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed/ring/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/io
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/io/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/backend/metal
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/backend/metal/kernels
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/fmt-build
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/fmt-src/CMakeLists.txt
+  -- Generating /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/examples
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  -- Generating done (0.2s)
+  -- Build files have been written to: /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build
+  running: cd "/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build" && LC_ALL="C" "cmake" "--build" "/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build" "--target" "install" "--config" "Release" "--parallel" "3"
+  Change Dir: '/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build'
+
+  Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile -j3 install
+  /opt/homebrew/bin/cmake -S/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c -B/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build --check-build-system CMakeFiles/Makefile.cmake 0
+  /opt/homebrew/bin/cmake -E cmake_progress_start /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/CMakeFiles /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build//CMakeFiles/progress.marks
+  /Applications/Xcode_26.0.1.app/Contents/Developer/usr/bin/make  -f CMakeFiles/Makefile2 all
+  /Applications/Xcode_26.0.1.app/Contents/Developer/usr/bin/make  -f _deps/mlx-build/mlx/io/CMakeFiles/gguflib.dir/build.make _deps/mlx-build/mlx/io/CMakeFiles/gguflib.dir/depend
+  /Applications/Xcode_26.0.1.app/Contents/Developer/usr/bin/make  -f _deps/mlx-build/mlx/backend/metal/kernels/CMakeFiles/mlx-metallib.dir/build.make _deps/mlx-build/mlx/backend/metal/kernels/CMakeFiles/mlx-metallib.dir/depend
+  /Applications/Xcode_26.0.1.app/Contents/Developer/usr/bin/make  -f _deps/mlx-build/mlx/CMakeFiles/mlx_version.dir/build.make _deps/mlx-build/mlx/CMakeFiles/mlx_version.dir/depend
+  cd /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build && /opt/homebrew/bin/cmake -E cmake_depends "Unix Makefiles" /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/io /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/io /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/io/CMakeFiles/gguflib.dir/DependInfo.cmake "--color="
+  cd /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build && /opt/homebrew/bin/cmake -E cmake_depends "Unix Makefiles" /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/CMakeFiles/mlx_version.dir/DependInfo.cmake "--color="
+  cd /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build && /opt/homebrew/bin/cmake -E cmake_depends "Unix Makefiles" /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/backend/metal/kernels /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/backend/metal/kernels/CMakeFiles/mlx-metallib.dir/DependInfo.cmake "--color="
+  /Applications/Xcode_26.0.1.app/Contents/Developer/usr/bin/make  -f _deps/mlx-build/mlx/io/CMakeFiles/gguflib.dir/build.make _deps/mlx-build/mlx/io/CMakeFiles/gguflib.dir/build
+  /Applications/Xcode_26.0.1.app/Contents/Developer/usr/bin/make  -f _deps/mlx-build/mlx/backend/metal/kernels/CMakeFiles/mlx-metallib.dir/build.make _deps/mlx-build/mlx/backend/metal/kernels/CMakeFiles/mlx-metallib.dir/build
+  /Applications/Xcode_26.0.1.app/Contents/Developer/usr/bin/make  -f _deps/mlx-build/mlx/CMakeFiles/mlx_version.dir/build.make _deps/mlx-build/mlx/CMakeFiles/mlx_version.dir/build
+  [  1%] Building C object _deps/mlx-build/mlx/io/CMakeFiles/gguflib.dir/__/__/__/gguflib-src/fp16.c.o
+  cd /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/io && /usr/bin/cc -DACCELERATE_NEW_LAPACK -DMLX_USE_ACCELERATE  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=10.13 -O3 -DNDEBUG -arch arm64 -mmacosx-version-min=10.13 -fPIC -MD -MT _deps/mlx-build/mlx/io/CMakeFiles/gguflib.dir/__/__/__/gguflib-src/fp16.c.o -MF CMakeFiles/gguflib.dir/__/__/__/gguflib-src/fp16.c.o.d -o CMakeFiles/gguflib.dir/__/__/__/gguflib-src/fp16.c.o -c /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/gguflib-src/fp16.c
+  [  1%] Building arg_reduce.air
+  cd /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/backend/metal/kernels && xcrun -sdk macosx metal -Wall -Wextra -fno-fast-math -Wno-c++17-extensions -mmacosx-version-min=10.13 -c /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal -I/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src -I/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/metal_3_0 -o arg_reduce.air
+  [  1%] Building CXX object _deps/mlx-build/mlx/CMakeFiles/mlx_version.dir/version.cpp.o
+  cd /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx && /usr/bin/c++ -DACCELERATE_NEW_LAPACK -DMLX_USE_ACCELERATE -DMLX_VERSION=\"0.25.1\"  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=10.13 -O3 -DNDEBUG -std=gnu++17 -arch arm64 -mmacosx-version-min=10.13 -fPIC -MD -MT _deps/mlx-build/mlx/CMakeFiles/mlx_version.dir/version.cpp.o -MF CMakeFiles/mlx_version.dir/version.cpp.o.d -o CMakeFiles/mlx_version.dir/version.cpp.o -c /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/version.cpp
+  [  1%] Building C object _deps/mlx-build/mlx/io/CMakeFiles/gguflib.dir/__/__/__/gguflib-src/gguflib.c.o
+  cd /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/io && /usr/bin/cc -DACCELERATE_NEW_LAPACK -DMLX_USE_ACCELERATE  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=10.13 -O3 -DNDEBUG -arch arm64 -mmacosx-version-min=10.13 -fPIC -MD -MT _deps/mlx-build/mlx/io/CMakeFiles/gguflib.dir/__/__/__/gguflib-src/gguflib.c.o -MF CMakeFiles/gguflib.dir/__/__/__/gguflib-src/gguflib.c.o.d -o CMakeFiles/gguflib.dir/__/__/__/gguflib-src/gguflib.c.o -c /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/gguflib-src/gguflib.c
+  [  2%] Linking C static library libgguflib.a
+  cd /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/io && /opt/homebrew/bin/cmake -P CMakeFiles/gguflib.dir/cmake_clean_target.cmake
+  cd /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx/io && /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/gguflib.dir/link.txt --verbose=1
+  [  3%] Linking CXX static library libmlx_version.a
+  cd /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx && /opt/homebrew/bin/cmake -P CMakeFiles/mlx_version.dir/cmake_clean_target.cmake
+  cd /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-build/mlx && /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/mlx_version.dir/link.txt --verbose=1
+  /usr/bin/ar qc libmlx_version.a CMakeFiles/mlx_version.dir/version.cpp.o
+  /usr/bin/ranlib libmlx_version.a
+  /usr/bin/ar qc libgguflib.a "CMakeFiles/gguflib.dir/__/__/__/gguflib-src/fp16.c.o" "CMakeFiles/gguflib.dir/__/__/__/gguflib-src/gguflib.c.o"
+  /usr/bin/ranlib libgguflib.a
+  [  3%] Built target mlx_version
+  [  3%] Built target gguflib
+
+
+  --- stderr
+  CMake Warning (dev) at /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:128 (set):
+    Policy CMP0126 is not set: set(CACHE) does not remove a normal variable of
+    the same name.  Run "cmake --help-policy CMP0126" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    For compatibility with older versions of CMake, normal variable
+    "CMAKE_CXX_COMPILER" will be removed from the current scope.
+  Call Stack (most recent call first):
+    /opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:71 (_cmake_find_compiler_path)
+    CMakeLists.txt:6 (project)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake
+  CMake Warning (dev) at /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:128 (set):
+    Policy CMP0126 is not set: set(CACHE) does not remove a normal variable of
+    the same name.  Run "cmake --help-policy CMP0126" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    For compatibility with older versions of CMake, normal variable
+    "CMAKE_C_COMPILER" will be removed from the current scope.
+  Call Stack (most recent call first):
+    /opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:67 (_cmake_find_compiler_path)
+    CMakeLists.txt:6 (project)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+  CMake Warning (dev) at /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt:4 (file):
+    Policy CMP0159 is not set: file(STRINGS) with REGEX updates
+    CMAKE_MATCH_<n>.  Run "cmake --help-policy CMP0159" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    For compatibility, CMake is leaving CMAKE_MATCH_<n> unchanged.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/json-src
+     Called from: [3]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+     Returning to         /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src
+     Called from: [3]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/common
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+     Returning to         /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/cpu
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+     Returning to         /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed/mpi
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed/CMakeLists.txt
+     Returning to         /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed/CMakeLists.txt
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed/ring
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed/CMakeLists.txt
+     Returning to         /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/distributed/CMakeLists.txt
+     Returning to         /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/io
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+     Returning to         /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/CMakeLists.txt
+     Returning to         /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/CMakeLists.txt
+     Returning to         /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+     Returning to         /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+     Entering             /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/fmt-src
+     Called from: [3]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+     Returning to         /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src
+     Called from: [3]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+     Returning to         /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c
+     Called from: [3]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+                  [2]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+                  [1]	/opt/homebrew/share/cmake/Modules/FetchContent.cmake
+     Entering             /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+     Returning to         /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+  CMake Warning (dev) at CMakeLists.txt:71 (add_library):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/CMakeLists.txt
+  CMake Warning (dev) at /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt:78 (add_library):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/CMakeLists.txt
+  CMake Warning (dev) at /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt:24 (add_library):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/CMakeLists.txt
+  CMake Warning (dev) at /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/io/CMakeLists.txt:18 (add_library):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/io/CMakeLists.txt
+  CMake Warning (dev) at /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/fmt-src/CMakeLists.txt:50 (add_library):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  Call Stack (most recent call first):
+    /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/fmt-src/CMakeLists.txt:285 (add_module_library)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/fmt-src/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:1 (add_executable):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:1 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_LINK_FLAGS' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:1 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_CREATE_CONSOLE_EXE' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:4 (add_executable):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:4 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_LINK_FLAGS' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:4 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_CREATE_CONSOLE_EXE' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:7 (add_executable):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:7 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_LINK_FLAGS' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:7 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_CREATE_CONSOLE_EXE' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:10 (add_executable):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:10 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_LINK_FLAGS' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:10 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_CREATE_CONSOLE_EXE' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:14 (add_executable):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:14 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_LINK_FLAGS' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:14 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_CREATE_CONSOLE_EXE' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:18 (add_executable):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:18 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_LINK_FLAGS' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:18 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_CREATE_CONSOLE_EXE' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:21 (add_executable):
+    Policy CMP0156 is not set: De-duplicate libraries on link lines based on
+    linker capabilities.  Run "cmake --help-policy CMP0156" for policy details.
+    Use the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, legacy libraries de-duplication strategy will
+    be applied.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:21 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_LINK_FLAGS' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning (dev) at examples/CMakeLists.txt:21 (add_executable):
+    Policy CMP0181 is not set: Link command-line fragment variables are parsed
+    and re-quoted.  Run "cmake --help-policy CMP0181" for policy details.  Use
+    the cmake_policy command to set the policy and suppress this warning.
+
+    Since the policy is not set, the contents of variable
+    'CMAKE_CXX_CREATE_CONSOLE_EXE' will be used as is.
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+     Called from: [1]	/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mlx-sys-0.2.0/src/mlx-c/examples/CMakeLists.txt
+  CMake Warning:
+    Manually-specified variables were not used by the project:
+
+      CMAKE_ASM_COMPILER
+      CMAKE_ASM_FLAGS
+
+
+  In file included from /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:5:
+  In file included from /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:14:
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/defines.h:11:32: error: program scope variable must reside in constant address space
+  static MTL_CONST constexpr int MAX_REDUCE_SPECIALIZED_DIMS = 4;
+                                 ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/defines.h:12:32: error: program scope variable must reside in constant address space
+  static MTL_CONST constexpr int REDUCE_N_READS = 4;
+                                 ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/defines.h:13:32: error: program scope variable must reside in constant address space
+  static MTL_CONST constexpr int REDUCE_N_WRITES = 4;
+                                 ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/defines.h:14:32: error: program scope variable must reside in constant address space
+  static MTL_CONST constexpr int SOFTMAX_N_READS = 4;
+                                 ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/defines.h:15:32: error: program scope variable must reside in constant address space
+  static MTL_CONST constexpr int RMS_N_READS = 4;
+                                 ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/defines.h:16:32: error: program scope variable must reside in constant address space
+  static MTL_CONST constexpr int RMS_LOOPED_LIMIT = 4096;
+                                 ^
+  In file included from /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:5:
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:390:28: error: no matching function for call to 'simd_shuffle_and_fill_up'
+    return as_type<uint64_t>(metal::simd_shuffle_and_fill_up(
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/bf16_math.h:372:1: note: candidate function not viable: no known conversion from 'uint2' (vector of 2 'unsigned int' values) to 'bfloat16_t' (aka '_MLX_BFloat16') for 1st argument
+  instantiate_metal_simd_comm_funcs(
+  ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/bf16_math.h:294:20: note: expanded from macro 'instantiate_metal_simd_comm_funcs'
+    METAL_FUNC otype simd_shuffle_and_fill_up(                                 \
+                     ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/bf16_math.h:372:1: note: candidate function not viable: requires 4 arguments, but 3 were provided
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/bf16_math.h:288:20: note: expanded from macro 'instantiate_metal_simd_comm_funcs'
+    METAL_FUNC otype simd_shuffle_and_fill_up(                                 \
+                     ^
+  In file included from /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:5:
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:390:10: error: as_type cast from 'bfloat16_t' (aka '_MLX_BFloat16') to 'uint64_t' (aka 'unsigned long') is not allowed
+    return as_type<uint64_t>(metal::simd_shuffle_and_fill_up(
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:396:27: error: no matching function for call to 'simd_shuffle_and_fill_up'
+    return as_type<int64_t>(metal::simd_shuffle_and_fill_up(
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/bf16_math.h:372:1: note: candidate function not viable: no known conversion from 'uint2' (vector of 2 'unsigned int' values) to 'bfloat16_t' (aka '_MLX_BFloat16') for 1st argument
+  instantiate_metal_simd_comm_funcs(
+  ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/bf16_math.h:294:20: note: expanded from macro 'instantiate_metal_simd_comm_funcs'
+    METAL_FUNC otype simd_shuffle_and_fill_up(                                 \
+                     ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/bf16_math.h:372:1: note: candidate function not viable: requires 4 arguments, but 3 were provided
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/bf16_math.h:288:20: note: expanded from macro 'instantiate_metal_simd_comm_funcs'
+    METAL_FUNC otype simd_shuffle_and_fill_up(                                 \
+                     ^
+  In file included from /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:5:
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:396:10: error: as_type cast from 'bfloat16_t' (aka '_MLX_BFloat16') to 'int64_t' (aka 'long') is not allowed
+    return as_type<int64_t>(metal::simd_shuffle_and_fill_up(
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:401:10: error: call to 'simd_shuffle_and_fill_up' is ambiguous
+    return simd_shuffle_and_fill_up(
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:389:1: note: candidate function
+  simd_shuffle_and_fill_up(uint64_t data, uint64_t filling, uint16_t delta) {
+  ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:395:1: note: candidate function
+  simd_shuffle_and_fill_up(int64_t data, int64_t filling, uint16_t delta) {
+  ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:400:13: note: candidate function
+  inline bool simd_shuffle_and_fill_up(bool data, bool filling, uint16_t delta) {
+              ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:410:7: error: call to 'simd_shuffle_and_fill_up' is ambiguous
+        simd_shuffle_and_fill_up(data.real, filling.real, delta),
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:389:1: note: candidate function
+  simd_shuffle_and_fill_up(uint64_t data, uint64_t filling, uint16_t delta) {
+  ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:395:1: note: candidate function
+  simd_shuffle_and_fill_up(int64_t data, int64_t filling, uint16_t delta) {
+  ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:400:13: note: candidate function
+  inline bool simd_shuffle_and_fill_up(bool data, bool filling, uint16_t delta) {
+              ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:411:7: error: call to 'simd_shuffle_and_fill_up' is ambiguous
+        simd_shuffle_and_fill_up(data.imag, filling.imag, delta));
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:389:1: note: candidate function
+  simd_shuffle_and_fill_up(uint64_t data, uint64_t filling, uint16_t delta) {
+  ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:395:1: note: candidate function
+  simd_shuffle_and_fill_up(int64_t data, int64_t filling, uint16_t delta) {
+  ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/utils.h:400:13: note: candidate function
+  inline bool simd_shuffle_and_fill_up(bool data, bool filling, uint16_t delta) {
+              ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:78:5: error: type 'const constant int64_t *' (aka 'const constant long *') is not valid for attribute 'buffer'
+      const constant int64_t* in_strides [[buffer(3)]],
+      ^                                    ~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:78:20: note: type 'int64_t' (aka 'long') cannot be used in buffer pointee type
+      const constant int64_t* in_strides [[buffer(3)]],
+                     ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:79:5: error: type 'const constant int64_t *' (aka 'const constant long *') is not valid for attribute 'buffer'
+      const constant int64_t* out_strides [[buffer(4)]],
+      ^                                     ~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:79:20: note: type 'int64_t' (aka 'long') cannot be used in buffer pointee type
+      const constant int64_t* out_strides [[buffer(4)]],
+                     ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:80:5: error: type 'const constant size_t &' (aka 'const constant unsigned long &') is not valid for attribute 'buffer'
+      const constant size_t& ndim [[buffer(5)]],
+      ^                             ~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:80:20: note: type 'size_t' (aka 'unsigned long') cannot be used in buffer pointee type
+      const constant size_t& ndim [[buffer(5)]],
+                     ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:81:5: error: type 'const constant int64_t &' (aka 'const constant long &') is not valid for attribute 'buffer'
+      const constant int64_t& axis_stride [[buffer(6)]],
+      ^                                     ~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:81:20: note: type 'int64_t' (aka 'long') cannot be used in buffer pointee type
+      const constant int64_t& axis_stride [[buffer(6)]],
+                     ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:82:5: error: type 'const constant size_t &' (aka 'const constant unsigned long &') is not valid for attribute 'buffer'
+      const constant size_t& axis_size [[buffer(7)]],
+      ^                                  ~~~~~~~~~
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:82:20: note: type 'size_t' (aka 'unsigned long') cannot be used in buffer pointee type
+      const constant size_t& axis_size [[buffer(7)]],
+                     ^
+  /Users/runner/work/fount/fount/src-tauri/target/aarch64-apple-darwin/release/build/mlx-sys-908db37f488aae7f/out/build/_deps/mlx-src/mlx/backend/metal/kernels/arg_reduce.metal:74:3: error: 'kernel' attribute requires Metal language standard macos-metal2.3 or higher
+  [[kernel]] void arg_reduce_general(
+    ^~~~~~
+  fatal error: too many errors emitted, stopping now [-ferror-limit=]
+  20 errors generated.
+  make[2]: *** [_deps/mlx-build/mlx/backend/metal/kernels/arg_reduce.air] Error 1
+  make[1]: *** [_deps/mlx-build/mlx/backend/metal/kernels/CMakeFiles/mlx-metallib.dir/all] Error 2
+  make[1]: *** Waiting for unfinished jobs....
+  make: *** [all] Error 2
+
+  thread 'main' (243138) panicked at /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cmake-0.1.54/src/lib.rs:1119:5:
+
+  command did not execute successfully, got: exit status: 2
+
+  build script failed, must exit now
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+warning: build failed, waiting for other jobs to finish...
+failed to build app: failed to build app
